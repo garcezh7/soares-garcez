@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Negativa de Cirurgia Reparadora Pós-Bariátrica | Soares Garcez Advogados</title>
-  <meta name="description" content="Seu plano negou a cirurgia reparadora? Apresente seu caso para análise por advogados com atuação em Direito da Saúde. Atendimento direto, sem intermediários."/>
+  <meta name="description" content="Seu plano negou ou está demorando em autorizar a cirurgia reparadora pós-bariátrica? Apresente seu caso para análise por advogados com atuação em Direito da Saúde."/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -18,88 +18,85 @@
     body { font-family: var(--font-body); color: var(--text); background: var(--white); overflow-x: hidden; }
 
     /* TOPBAR */
-    .topbar { background: var(--wine); text-align: center; padding: 0.65rem 1rem; font-size: 0.78rem; color: rgba(255,255,255,0.85); letter-spacing: 0.04em; }
-    .topbar strong { color: var(--white); font-weight: 700; }
+    .topbar { background: var(--navy-dark); text-align: center; padding: 0.65rem 1rem; font-size: 0.78rem; color: rgba(255,255,255,0.7); letter-spacing: 0.04em; border-bottom: 1px solid rgba(201,169,110,0.15); }
+    .topbar strong { color: var(--gold); font-weight: 600; }
 
     /* NAV */
     nav { background: var(--navy-dark); padding: 1rem 5%; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.05); }
     .nav-logo img { height: 42px; width: auto; }
-    .nav-cta { background: var(--wine); color: var(--white); text-decoration: none; padding: 0.6rem 1.4rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; border-radius: 2px; transition: background 0.2s; text-transform: uppercase; white-space: nowrap; }
+    .nav-cta { background: var(--wine); color: var(--white); text-decoration: none; padding: 0.6rem 1.4rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; border-radius: 2px; transition: background 0.2s; text-transform: uppercase; }
     .nav-cta:hover { background: var(--wine-light); }
 
-    /* HERO — duas dores unidas */
-    .hero { background: var(--navy-dark); padding: 5.5rem 5% 0; position: relative; overflow: hidden; }
-    .hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(123,28,42,0.14) 0%, transparent 55%); pointer-events: none; }
-    .hero-inner { max-width: 860px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+    /* HERO */
+    .hero { background: var(--navy-dark); padding: 5.5rem 5% 4.5rem; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(123,28,42,0.1) 0%, transparent 55%); }
+    .hero-inner { max-width: 820px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
     .eyebrow-pill { display: inline-block; border: 1px solid rgba(201,169,110,0.35); color: var(--gold); font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; padding: 0.4rem 1.2rem; border-radius: 2px; margin-bottom: 1.75rem; }
-    .hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 900; color: var(--white); line-height: 1.18; margin-bottom: 1.5rem; }
+    .hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 900; color: var(--white); line-height: 1.18; margin-bottom: 1.25rem; }
     .hero h1 em { font-style: normal; color: var(--gold); }
-    .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.62); line-height: 1.82; max-width: 660px; margin: 0 auto 2.5rem; }
-    .hero-sub strong { color: rgba(255,255,255,0.85); font-weight: 600; }
+    .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.65); line-height: 1.8; max-width: 620px; margin: 0 auto 2.5rem; }
     .btn-hero { display: inline-flex; align-items: center; gap: 0.7rem; background: var(--wine); color: var(--white); text-decoration: none; padding: 1rem 2.4rem; font-size: 0.9rem; font-weight: 700; border-radius: 2px; letter-spacing: 0.06em; transition: background 0.2s, transform 0.2s; }
     .btn-hero:hover { background: var(--wine-light); transform: translateY(-1px); }
-    .btn-hero svg { width: 20px; height: 20px; flex-shrink: 0; }
-    .hero-note { font-size: 0.72rem; color: rgba(255,255,255,0.32); margin-top: 0.9rem; letter-spacing: 0.06em; }
+    .btn-hero svg { width: 20px; height: 20px; }
+    .hero-note { font-size: 0.72rem; color: rgba(255,255,255,0.35); margin-top: 0.9rem; letter-spacing: 0.06em; }
+    .hero-indicators { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.07); }
+    .indicator { text-align: center; }
+    .indicator-label { font-size: 0.68rem; color: rgba(255,255,255,0.38); letter-spacing: 0.12em; text-transform: uppercase; margin-top: 4px; }
+    .indicator-value { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: var(--gold); }
 
-    /* DUPLA DOR — primeira seção após hero */
-    .section-dupla-dor { background: var(--navy-dark); padding: 3rem 5% 5.5rem; }
-    .dupla-dor-inner { max-width: 980px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1px 1fr; gap: 3rem; align-items: start; }
-    .dupla-dor-divider { background: rgba(255,255,255,0.07); align-self: stretch; }
-    .dor-col-label { font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.6rem; }
-    .dor-col-label::before { content: ''; display: block; width: 20px; height: 1px; background: var(--wine); flex-shrink: 0; }
-    .dor-col h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--white); margin-bottom: 1rem; line-height: 1.3; }
-    .dor-col-lista { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
-    .dor-col-lista li { display: flex; align-items: flex-start; gap: 0.65rem; font-size: 0.88rem; color: rgba(255,255,255,0.55); line-height: 1.6; }
-    .dor-col-lista li::before { content: '—'; color: var(--wine); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
-
-    /* PONTE — conecta as duas dores à solução */
-    .section-ponte { background: rgba(123,28,42,0.08); border-top: 1px solid rgba(123,28,42,0.18); border-bottom: 1px solid rgba(123,28,42,0.18); padding: 2.5rem 5%; }
-    .ponte-inner { max-width: 780px; margin: 0 auto; text-align: center; }
-    .ponte-texto { font-family: var(--font-display); font-size: clamp(1.15rem, 2vw, 1.5rem); font-weight: 700; color: var(--navy-dark); line-height: 1.45; }
-    .ponte-texto em { font-style: normal; color: var(--wine); }
-
-    /* COMO TRABALHAMOS */
-    .section-diff { padding: 5.5rem 5%; background: var(--white); }
-    .section-diff .container { max-width: 1060px; margin: 0 auto; }
-    .section-diff-header { text-align: center; margin-bottom: 3rem; }
-    .diff-sub { font-size: 0.95rem; color: var(--muted); line-height: 1.75; max-width: 520px; margin: 0.75rem auto 0; }
-    .diff-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
-    .diff-card { background: var(--off-white); padding: 2rem 1.5rem; border-radius: 2px; border-top: 3px solid var(--wine); }
-    .diff-icon { font-size: 1.6rem; margin-bottom: 1rem; }
-    .diff-title { font-weight: 700; font-size: 0.9rem; color: var(--navy-dark); margin-bottom: 0.5rem; }
-    .diff-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.65; }
-
-    /* SECTIONS COMMON */
+    /* SECTIONS */
+    .container { max-width: 1100px; margin: 0 auto; }
     .eyebrow { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
     .eyebrow-line { width: 28px; height: 2px; background: var(--wine); flex-shrink: 0; }
     .eyebrow span { font-size: 0.68rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--wine); font-weight: 600; }
     .eyebrow-center { justify-content: center; }
-    .eyebrow-gold .eyebrow-line { background: var(--gold); }
-    .eyebrow-gold span { color: var(--gold); }
+    .eyebrow-center .eyebrow-line { background: var(--wine); }
     .section-title { font-family: var(--font-display); font-size: clamp(1.7rem, 2.8vw, 2.4rem); font-weight: 700; color: var(--navy-dark); line-height: 1.22; margin-bottom: 1.25rem; }
     .section-title-white { color: var(--white); }
-    .container { max-width: 1100px; margin: 0 auto; }
+
+    /* DOR */
+    .section-dor { padding: 5.5rem 5%; background: var(--off-white); }
+    .section-dor .container { max-width: 780px; text-align: center; }
+    .dor-intro { font-size: 1rem; color: #4B5563; line-height: 1.85; margin-bottom: 2rem; }
+    .dor-lista { list-style: none; text-align: left; max-width: 580px; margin: 0 auto 2rem; display: flex; flex-direction: column; gap: 0.9rem; }
+    .dor-lista li { display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.93rem; color: #374151; line-height: 1.6; }
+    .dor-lista li::before { content: '—'; color: var(--wine); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    .dor-encerramento { background: var(--navy-dark); border-left: 4px solid var(--gold); padding: 1.25rem 1.5rem; border-radius: 2px; font-size: 0.95rem; color: rgba(255,255,255,0.75); line-height: 1.7; text-align: left; max-width: 580px; margin: 0 auto; }
+    .dor-encerramento strong { color: var(--gold); }
+
+    /* DIFERENCIAÇÃO */
+    .section-diff { padding: 5.5rem 5%; background: var(--white); }
+    .section-diff .container { text-align: center; }
+    .diff-sub { font-size: 0.95rem; color: var(--muted); line-height: 1.75; max-width: 560px; margin: 0 auto 3rem; }
+    .diff-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+    .diff-card { background: var(--off-white); padding: 2rem 1.5rem; border-radius: 2px; border-top: 3px solid var(--wine); text-align: left; }
+    .diff-icon { font-size: 1.6rem; margin-bottom: 1rem; }
+    .diff-title { font-weight: 700; font-size: 0.9rem; color: var(--navy-dark); margin-bottom: 0.5rem; }
+    .diff-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
 
     /* QUANDO QUESTIONAR */
     .section-quando { padding: 5.5rem 5%; background: var(--navy-dark); }
     .section-quando .container { text-align: center; }
-    .quando-sub { font-size: 0.95rem; color: rgba(255,255,255,0.5); line-height: 1.75; max-width: 540px; margin: 0 auto 3rem; }
-    .quando-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5px; background: rgba(255,255,255,0.07); margin-bottom: 1.5rem; }
+    .section-quando .section-title { color: var(--white); }
+    .section-quando .eyebrow span { color: var(--gold); }
+    .section-quando .eyebrow-line { background: var(--gold); }
+    .quando-sub { font-size: 0.95rem; color: rgba(255,255,255,0.52); line-height: 1.75; max-width: 540px; margin: 0 auto 3rem; }
+    .quando-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5px; background: rgba(255,255,255,0.07); margin-bottom: 2rem; }
     .quando-card { background: var(--navy-dark); padding: 2rem 1.5rem; text-align: left; position: relative; overflow: hidden; transition: background 0.3s; }
     .quando-card:hover { background: rgba(28,43,74,0.85); }
     .quando-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--gold); transition: width 0.4s; }
     .quando-card:hover::after { width: 100%; }
-    .quando-num { font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: rgba(201,169,110,0.1); line-height: 1; margin-bottom: 0.75rem; }
+    .quando-num { font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: rgba(201,169,110,0.12); line-height: 1; margin-bottom: 0.75rem; }
     .quando-title { font-size: 0.9rem; font-weight: 600; color: var(--white); margin-bottom: 0.5rem; }
-    .quando-desc { font-size: 0.78rem; color: rgba(255,255,255,0.42); line-height: 1.65; }
-    .quando-nota { font-size: 0.7rem; color: rgba(255,255,255,0.25); font-style: italic; }
+    .quando-desc { font-size: 0.78rem; color: rgba(255,255,255,0.45); line-height: 1.65; }
+    .quando-nota { font-size: 0.72rem; color: rgba(255,255,255,0.28); font-style: italic; margin-top: 0.5rem; }
 
     /* COMO ANALISAMOS */
     .section-como { padding: 5.5rem 5%; background: var(--gray); }
     .section-como .container { text-align: center; }
-    .como-sub { font-size: 0.95rem; color: var(--muted); max-width: 480px; margin: 0.5rem auto 3rem; line-height: 1.7; }
+    .como-sub { font-size: 0.95rem; color: var(--muted); max-width: 480px; margin: 0 auto 3rem; line-height: 1.7; }
     .como-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
-    .como-step { background: var(--white); padding: 2rem 1.5rem; border-radius: 2px; border-top: 3px solid var(--wine); text-align: left; }
+    .como-step { background: var(--white); padding: 2rem 1.5rem; border-radius: 2px; border-top: 3px solid var(--wine); text-align: left; position: relative; }
     .como-num { font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: rgba(123,28,42,0.07); line-height: 1; margin-bottom: 0.75rem; }
     .como-title { font-size: 0.88rem; font-weight: 700; color: var(--navy-dark); margin-bottom: 0.5rem; }
     .como-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.65; }
@@ -107,7 +104,7 @@
     /* SITUAÇÕES */
     .section-situacoes { padding: 5.5rem 5%; background: var(--white); }
     .section-situacoes .container { text-align: center; }
-    .sit-sub { font-size: 0.95rem; color: var(--muted); max-width: 500px; margin: 0.5rem auto 3rem; line-height: 1.7; }
+    .sit-sub { font-size: 0.95rem; color: var(--muted); max-width: 500px; margin: 0 auto 3rem; line-height: 1.7; }
     .sit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 1.5rem; }
     .sit-card { background: var(--off-white); border-radius: 2px; padding: 1.75rem; text-align: left; border-bottom: 3px solid var(--wine); }
     .sit-icon { font-size: 1.4rem; margin-bottom: 0.75rem; }
@@ -118,7 +115,7 @@
     /* ADVOGADOS */
     .section-adv { padding: 5.5rem 5%; background: var(--off-white); }
     .section-adv .container { text-align: center; }
-    .adv-sub { font-size: 0.95rem; color: var(--muted); max-width: 520px; margin: 0.5rem auto 3rem; line-height: 1.75; }
+    .adv-sub { font-size: 0.95rem; color: var(--muted); max-width: 520px; margin: 0 auto 3rem; line-height: 1.75; }
     .adv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 760px; margin: 0 auto; }
     .adv-card { background: var(--white); border-radius: 2px; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
     .adv-photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; display: block; }
@@ -146,11 +143,11 @@
     .cta-tag { display: inline-block; background: rgba(123,28,42,0.28); border: 1px solid rgba(123,28,42,0.45); color: var(--gold); font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.4rem 1rem; border-radius: 2px; margin-bottom: 1.5rem; }
     .cta-title { font-family: var(--font-display); font-size: clamp(1.75rem, 3vw, 2.6rem); font-weight: 700; color: var(--white); line-height: 1.2; margin-bottom: 1rem; }
     .cta-title em { font-style: normal; color: var(--gold); }
-    .cta-desc { font-size: 0.97rem; color: rgba(255,255,255,0.55); line-height: 1.78; margin-bottom: 2.5rem; max-width: 520px; margin-left: auto; margin-right: auto; }
+    .cta-desc { font-size: 0.97rem; color: rgba(255,255,255,0.58); line-height: 1.78; margin-bottom: 2.5rem; max-width: 520px; margin-left: auto; margin-right: auto; }
     .btn-cta { display: inline-flex; align-items: center; gap: 0.75rem; background: var(--wine); color: var(--white); text-decoration: none; padding: 1.1rem 2.8rem; font-size: 0.92rem; font-weight: 700; border-radius: 2px; letter-spacing: 0.06em; transition: background 0.2s, transform 0.2s; }
     .btn-cta:hover { background: var(--wine-light); transform: translateY(-2px); }
     .btn-cta svg { width: 22px; height: 22px; }
-    .cta-nota { font-size: 0.7rem; color: rgba(255,255,255,0.2); margin-top: 1.25rem; letter-spacing: 0.05em; }
+    .cta-nota { font-size: 0.7rem; color: rgba(255,255,255,0.22); margin-top: 1.25rem; letter-spacing: 0.05em; }
 
     /* FOOTER */
     footer { background: #0A1120; padding: 2rem 5%; text-align: center; border-top: 1px solid rgba(255,255,255,0.04); }
@@ -163,8 +160,6 @@
     .wa-float svg { width: 28px; height: 28px; fill: white; }
 
     @media (max-width: 860px) {
-      .dupla-dor-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-      .dupla-dor-divider { display: none; }
       .diff-grid { grid-template-columns: 1fr 1fr; }
       .quando-grid { grid-template-columns: 1fr 1fr; gap: 0; }
       .como-steps { grid-template-columns: 1fr 1fr; }
@@ -175,6 +170,7 @@
       .diff-grid { grid-template-columns: 1fr; }
       .como-steps { grid-template-columns: 1fr; }
       .quando-grid { grid-template-columns: 1fr; }
+      .hero-indicators { gap: 1.5rem; }
     }
   </style>
 </head>
@@ -195,67 +191,53 @@
 <section class="hero">
   <div class="hero-inner">
     <div class="eyebrow-pill">Direito da Saúde · Cirurgia Reparadora Pós-Bariátrica</div>
-    <h1>Você lutou para transformar o seu corpo.<br/>Merece um advogado que <em>realmente acompanhe o seu caso.</em></h1>
-    <p class="hero-sub">
-      O excesso de pele após a bariátrica não é frescura — é uma sequela real que causa dor, infecção e limitação. <strong>Quando há indicação médica e caráter funcional, a negativa do plano pode ser juridicamente questionada.</strong> Mas você também não merece contratar um advogado e virar mais um processo sem retorno. Aqui, o atendimento é direto, a análise é individual e você sabe o que está acontecendo.
-    </p>
+    <h1>Você não passou pela bariátrica<br/>para continuar <em>sofrendo com o próprio corpo.</em></h1>
+    <p class="hero-sub">Quando há indicação médica e a cirurgia reparadora tem caráter funcional, a negativa do plano de saúde pode ser juridicamente questionada. Analisamos documentos, avaliamos o contrato e orientamos sobre os caminhos disponíveis, com atendimento direto por advogados com atuação em Direito da Saúde.</p>
     <a href="https://wa.me/5511932014994?text=Ol%C3%A1%2C%20quero%20apresentar%20meu%20caso%20sobre%20cirurgia%20reparadora%20p%C3%B3s-bari%C3%A1trica." target="_blank" class="btn-hero">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
       Apresentar meu caso
     </a>
     <p class="hero-note">Atendimento online · Análise inicial · Atuação nacional</p>
-  </div>
-</section>
-
-<!-- DUPLA DOR -->
-<section class="section-dupla-dor">
-  <div class="dupla-dor-inner">
-    <div class="dor-col">
-      <div class="dor-col-label">A dor do corpo</div>
-      <h3>O tratamento não terminou com a bariátrica.</h3>
-      <ul class="dor-col-lista">
-        <li>Excesso de pele causando assaduras, feridas e infecções constantes</li>
-        <li>Dificuldade para se vestir, trabalhar e se movimentar no dia a dia</li>
-        <li>Vergonha do próprio corpo mesmo depois de toda a perda de peso</li>
-        <li>Sensação de que o resultado da bariátrica ainda está incompleto</li>
-        <li>Plano classificando como estética algo que tem consequências físicas reais</li>
-      </ul>
-    </div>
-    <div class="dupla-dor-divider"></div>
-    <div class="dor-col">
-      <div class="dor-col-label">A dor do abandono</div>
-      <h3>Contratar um advogado não pode ser mais uma decepção.</h3>
-      <ul class="dor-col-lista">
-        <li>Escritórios que somem depois que você assina o contrato</li>
-        <li>Atendimento feito por estagiários que não conhecem o seu histórico</li>
-        <li>Processos que andam sem que você saiba o que está acontecendo</li>
-        <li>Perguntas sem resposta e retornos que nunca chegam</li>
-        <li>A sensação de ter virado apenas mais um número numa fila</li>
-      </ul>
+    <div class="hero-indicators">
+      <div class="indicator"><div class="indicator-value">Direto</div><div class="indicator-label">Atendimento pelos advogados</div></div>
+      <div class="indicator"><div class="indicator-value">Documental</div><div class="indicator-label">Análise dos documentos</div></div>
+      <div class="indicator"><div class="indicator-value">Saúde</div><div class="indicator-label">Direito da Saúde</div></div>
+      <div class="indicator"><div class="indicator-value">Nacional</div><div class="indicator-label">Atuação em todo o Brasil</div></div>
     </div>
   </div>
 </section>
 
-<!-- PONTE -->
-<section class="section-ponte">
-  <div class="ponte-inner">
-    <p class="ponte-texto">
-      No Soares Garcez, você fala com o advogado que analisa os seus documentos,<br/>
-      conduz a sua demanda e <em>responde quando você precisa saber.</em>
-    </p>
+<!-- DOR -->
+<section class="section-dor">
+  <div class="container">
+    <div class="eyebrow eyebrow-center">
+      <div class="eyebrow-line"></div><span>Você se identifica?</span><div class="eyebrow-line"></div>
+    </div>
+    <h2 class="section-title">A bariátrica foi um recomeço.<br/>Mas o corpo ainda não acompanhou.</h2>
+    <p class="dor-intro">Perder o peso foi uma conquista enorme. Mas o excesso de pele que ficou não é apenas estético, ele interfere no dia a dia, na saúde, na autoestima e na sensação de que o tratamento ficou incompleto.</p>
+    <ul class="dor-lista">
+      <li>Excesso de pele após grande perda de peso, causando desconforto constante</li>
+      <li>Assaduras, feridas, infecções e odores que não cedem com cuidados comuns</li>
+      <li>Dificuldade para vestir roupas, trabalhar, se movimentar e se relacionar</li>
+      <li>Vergonha do próprio corpo mesmo depois de toda a luta da bariátrica</li>
+      <li>Sensação de que o tratamento ficou incompleto, e o plano não quer saber disso</li>
+      <li>Plano classificando como estética uma cirurgia que pode ter caráter funcional</li>
+      <li>Medo de contratar um advogado e se tornar mais um caso sem acompanhamento</li>
+    </ul>
+    <div class="dor-encerramento">
+      <strong>Essa última preocupação é legítima.</strong> O mercado jurídico para esse tipo de caso cresceu muito, e com ele, o atendimento massificado. No Soares Garcez, cada caso é analisado individualmente, com leitura dos documentos e comunicação direta com o advogado responsável.
+    </div>
   </div>
 </section>
 
-<!-- COMO TRABALHAMOS -->
+<!-- DIFERENCIAÇÃO -->
 <section class="section-diff">
   <div class="container">
-    <div class="section-diff-header">
-      <div class="eyebrow eyebrow-center">
-        <div class="eyebrow-line"></div><span>Como trabalhamos</span><div class="eyebrow-line"></div>
-      </div>
-      <h2 class="section-title">Você não precisa virar mais um número.</h2>
-      <p class="diff-sub">Casos pós-bariátricos exigem atenção à documentação médica, leitura cuidadosa do contrato e estratégia jurídica adequada. Não é um caso que se resolve no automático.</p>
+    <div class="eyebrow eyebrow-center">
+      <div class="eyebrow-line"></div><span>Como trabalhamos</span><div class="eyebrow-line"></div>
     </div>
+    <h2 class="section-title">Você não precisa virar mais um número.</h2>
+    <p class="diff-sub">Casos pós-bariátricos exigem atenção à documentação médica, leitura cuidadosa do contrato do plano e estratégia jurídica adequada. Não é um caso que se resolve no automático.</p>
     <div class="diff-grid">
       <div class="diff-card">
         <div class="diff-icon">🎧</div>
@@ -275,7 +257,7 @@
       <div class="diff-card">
         <div class="diff-icon">🎯</div>
         <div class="diff-title">Estratégia individual</div>
-        <p class="diff-desc">O caminho jurídico depende da documentação, do contrato e da situação clínica. Não existe resposta automática — existe análise.</p>
+        <p class="diff-desc">O caminho jurídico depende da documentação, do contrato e da situação clínica. Não existe resposta automática, existe análise.</p>
       </div>
     </div>
   </div>
@@ -284,11 +266,11 @@
 <!-- QUANDO QUESTIONAR -->
 <section class="section-quando">
   <div class="container">
-    <div class="eyebrow eyebrow-center eyebrow-gold">
+    <div class="eyebrow eyebrow-center">
       <div class="eyebrow-line"></div><span>Fundamentos jurídicos</span><div class="eyebrow-line"></div>
     </div>
     <h2 class="section-title section-title-white">Quando a negativa pode ser questionada</h2>
-    <p class="quando-sub">A discussão judicial depende de elementos concretos. Havendo indicação médica e demonstração do caráter funcional da cirurgia, a negativa do plano pode configurar recusa abusiva — e ser discutida judicialmente.</p>
+    <p class="quando-sub">A discussão judicial depende de elementos concretos. Havendo indicação médica e demonstração do caráter funcional da cirurgia, a negativa do plano pode configurar recusa abusiva, e ser discutida judicialmente.</p>
     <div class="quando-grid">
       <div class="quando-card">
         <div class="quando-num">01</div>
@@ -298,20 +280,20 @@
       <div class="quando-card">
         <div class="quando-num">02</div>
         <div class="quando-title">Caráter funcional da cirurgia</div>
-        <p class="quando-desc">Demonstração de que o procedimento não é apenas estético — mas necessário para tratar consequências físicas da perda de peso.</p>
+        <p class="quando-desc">Demonstração de que o procedimento não é apenas estético, mas necessário para tratar consequências físicas da perda de peso.</p>
       </div>
       <div class="quando-card">
         <div class="quando-num">03</div>
         <div class="quando-title">Negativa ou demora do plano</div>
-        <p class="quando-desc">Resposta formal recusando a cobertura, ou ausência de resposta dentro do prazo previsto pela ANS.</p>
+        <p class="quando-desc">Resposta formal do plano recusando a cobertura, ou ausência de resposta dentro do prazo previsto pela ANS.</p>
       </div>
       <div class="quando-card">
         <div class="quando-num">04</div>
         <div class="quando-title">Análise do contrato</div>
-        <p class="quando-desc">Verificação das cláusulas e coberturas previstas para avaliar se a negativa tem ou não amparo contratual.</p>
+        <p class="quando-desc">Verificação das cláusulas contratuais e das coberturas previstas para avaliar se a negativa tem ou não amparo contratual.</p>
       </div>
     </div>
-    <p class="quando-nota">A viabilidade jurídica depende da documentação e das circunstâncias específicas de cada caso.</p>
+    <p class="quando-nota" style="color:rgba(255,255,255,0.28);font-size:0.7rem;font-style:italic;margin-top:1.5rem;">A viabilidade jurídica depende da documentação e das circunstâncias específicas de cada caso.</p>
   </div>
 </section>
 
@@ -322,7 +304,7 @@
       <div class="eyebrow-line"></div><span>Nosso método</span><div class="eyebrow-line"></div>
     </div>
     <h2 class="section-title">Como analisamos o seu caso</h2>
-    <p class="como-sub">Do primeiro contato à definição da estratégia — com transparência e acompanhamento próximo em cada etapa.</p>
+    <p class="como-sub">Do primeiro contato à definição da estratégia, com transparência e acompanhamento próximo em cada etapa.</p>
     <div class="como-steps">
       <div class="como-step">
         <div class="como-num">01</div>
@@ -337,12 +319,12 @@
       <div class="como-step">
         <div class="como-num">03</div>
         <div class="como-title">Definimos a estratégia jurídica</div>
-        <p class="como-desc">Com base nos documentos e nas circunstâncias, indicamos o caminho mais adequado e os passos seguintes.</p>
+        <p class="como-desc">Com base nos documentos e nas circunstâncias do caso, indicamos o caminho mais adequado e os passos seguintes.</p>
       </div>
       <div class="como-step">
         <div class="como-num">04</div>
         <div class="como-title">Acompanhamento com comunicação direta</div>
-        <p class="como-desc">Você recebe retorno do advogado responsável em cada fase. Sem intermediários, sem silêncio.</p>
+        <p class="como-desc">O cliente recebe retorno do advogado responsável em cada fase. Sem intermediários, sem silêncio, sem sumir.</p>
       </div>
     </div>
   </div>
@@ -355,7 +337,7 @@
       <div class="eyebrow-line"></div><span>Situações que analisamos</span><div class="eyebrow-line"></div>
     </div>
     <h2 class="section-title">Casos como o seu chegam até nós</h2>
-    <p class="sit-sub">Cada situação é diferente. O que trazemos aqui são exemplos de casos que chegaram ao escritório para análise — não promessas de resultado.</p>
+    <p class="sit-sub">Cada situação é diferente. O que trazemos aqui são exemplos de casos que chegaram ao escritório para análise, não promessas de resultado.</p>
     <div class="sit-grid">
       <div class="sit-card">
         <div class="sit-icon">📄</div>
@@ -365,17 +347,17 @@
       <div class="sit-card">
         <div class="sit-icon">🩹</div>
         <div class="sit-title">Infecções e feridas recorrentes</div>
-        <p class="sit-desc">Paciente com histórico documentado de infecções causadas pelo excesso de pele, sem resposta do plano à solicitação.</p>
+        <p class="sit-desc">Paciente com histórico documentado de infecções causadas pelo excesso de pele, sem resposta do plano à solicitação de cobertura.</p>
       </div>
       <div class="sit-card">
         <div class="sit-icon">⏳</div>
         <div class="sit-title">Demora injustificada do plano</div>
-        <p class="sit-desc">Solicitação feita há semanas ou meses sem resposta formal — situação que também pode ser analisada juridicamente.</p>
+        <p class="sit-desc">Solicitação feita há semanas ou meses sem resposta formal, situação que também pode ser analisada juridicamente.</p>
       </div>
       <div class="sit-card">
         <div class="sit-icon">🏥</div>
         <div class="sit-title">Indicação médica recusada</div>
-        <p class="sit-desc">Médico indicou a reparadora como necessária ao tratamento, mas o plano recusou sem justificativa técnica adequada.</p>
+        <p class="sit-desc">Médico indicou a cirurgia reparadora como necessária ao tratamento, mas o plano recusou sem justificativa técnica adequada.</p>
       </div>
       <div class="sit-card">
         <div class="sit-icon">📁</div>
@@ -384,8 +366,8 @@
       </div>
       <div class="sit-card">
         <div class="sit-icon">🔍</div>
-        <div class="sit-title">Dúvida antes de solicitar ao plano</div>
-        <p class="sit-desc">Paciente que ainda não recebeu negativa, mas quer entender se há base jurídica antes de dar o próximo passo.</p>
+        <div class="sit-title">Dúvida sobre o direito à cobertura</div>
+        <p class="sit-desc">Paciente que ainda não recebeu negativa formal, mas quer entender se há base jurídica antes de solicitar ao plano.</p>
       </div>
     </div>
     <p class="sit-nota">Cada caso depende da documentação, do contrato e da análise jurídica individual. As situações acima são exemplos, não garantias.</p>
@@ -399,14 +381,14 @@
       <div class="eyebrow-line"></div><span>Quem atende você</span><div class="eyebrow-line"></div>
     </div>
     <h2 class="section-title">Você fala com advogados,<br/>não com uma estrutura distante.</h2>
-    <p class="adv-sub">O atendimento é conduzido diretamente pelos sócios. Quem analisa os documentos, orienta sobre os caminhos e acompanha o caso é o próprio advogado responsável — do início ao fim.</p>
+    <p class="adv-sub">O atendimento é conduzido diretamente pelos sócios do escritório. Quem analisa os documentos, orienta sobre os caminhos e acompanha o caso é o próprio advogado responsável, do início ao fim.</p>
     <div class="adv-grid">
       <div class="adv-card">
         <img class="adv-photo" src="data:image/jpeg;base64,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" alt="Felipe Soares"/>
         <div class="adv-info">
           <div class="adv-nome">Felipe Soares</div>
           <div class="adv-oab">OAB/SP 506.023 · Sócio-Fundador</div>
-          <p class="adv-bio">Advogado com atuação em Direito de Família e Direito Civil. Conduz casos com atenção às particularidades de cada situação e comunicação direta com o cliente em cada etapa.</p>
+          <p class="adv-bio">Advogado com atuação em Direito de Família e Direito Civil. Conduz casos de divórcio, guarda, alimentos, inventário, partilha, contratos e conflitos patrimoniais com atenção às particularidades de cada situação.</p>
         </div>
       </div>
       <div class="adv-card">
@@ -414,7 +396,7 @@
         <div class="adv-info">
           <div class="adv-nome">Luiz Garcez</div>
           <div class="adv-oab">OAB/SP 507.618 · Sócio-Fundador</div>
-          <p class="adv-bio">Advogado com atuação em Direito da Saúde e Direito Civil. Analisa casos de negativa de cobertura, responsabilidade civil e situações que envolvem planos de saúde e questões patrimoniais complexas.</p>
+          <p class="adv-bio">Advogado com atuação em Direito da Saúde e Direito Civil. Analisa casos de negativa de cobertura por planos de saúde, responsabilidade civil, indenizações e situações de maior complexidade jurídica.</p>
         </div>
       </div>
     </div>
@@ -435,7 +417,7 @@
       </div>
       <div class="faq-item">
         <button class="faq-q">A cirurgia reparadora é considerada estética? <span class="icon">+</span></button>
-        <div class="faq-a">Não necessariamente. A classificação depende da indicação médica e da comprovação de que o procedimento tem finalidade funcional — como tratar infecções, feridas, dores ou limitações físicas. Essa distinção é central na análise jurídica do caso.</div>
+        <div class="faq-a">Não necessariamente. A classificação depende da indicação médica e da comprovação de que o procedimento tem finalidade funcional, como tratar infecções, feridas, dores ou limitações físicas decorrentes do excesso de pele. Essa distinção é central na análise jurídica do caso.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Preciso ter uma negativa formal do plano para agir? <span class="icon">+</span></button>
@@ -447,19 +429,19 @@
       </div>
       <div class="faq-item">
         <button class="faq-q">Que documentos preciso enviar para análise? <span class="icon">+</span></button>
-        <div class="faq-a">Em geral: laudo ou relatório médico indicando a cirurgia reparadora, resposta ou negativa do plano (se houver), contrato ou carteirinha do plano e histórico da bariátrica. O advogado pode indicar outros documentos conforme a análise avance.</div>
+        <div class="faq-a">Em geral: laudo ou relatório médico indicando a cirurgia reparadora, resposta ou negativa do plano (se houver), contrato ou carteirinha do plano de saúde e histórico da bariátrica. O advogado pode indicar outros documentos conforme a análise avance.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Quanto tempo pode levar o processo? <span class="icon">+</span></button>
-        <div class="faq-a">Não é possível estimar com precisão — depende da complexidade do caso, do contrato, da documentação e do andamento do processo judicial. O que podemos afirmar é que o caso será acompanhado com transparência em cada etapa.</div>
+        <div class="faq-a">Não é possível estimar com precisão, depende da complexidade do caso, do contrato, da documentação e do andamento do processo judicial. O que podemos afirmar é que o caso será acompanhado com transparência em cada etapa.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Pode haver indenização além da autorização da cirurgia? <span class="icon">+</span></button>
-        <div class="faq-a">Em alguns casos, sim. Dependendo das circunstâncias, pode ser discutida indenização por danos morais decorrentes da negativa indevida. Mas isso será avaliado na análise do caso — não é uma conclusão antecipada.</div>
+        <div class="faq-a">Em alguns casos, sim. Dependendo das circunstâncias, pode ser discutida indenização por danos morais decorrentes da negativa indevida. Mas isso será avaliado na análise do caso, não é uma conclusão antecipada.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Como funciona a contratação? <span class="icon">+</span></button>
-        <div class="faq-a">Você apresenta o caso pelo WhatsApp. Fazemos uma análise inicial com base nos documentos. Se houver fundamento jurídico para seguir adiante, conversamos sobre como o escritório pode atuar e os termos de contratação — sem pressão.</div>
+        <div class="faq-a">Você apresenta o caso pelo WhatsApp. Fazemos uma análise inicial com base nos documentos. Se houver fundamento jurídico para seguir adiante, conversamos sobre como o escritório pode atuar e os termos de contratação, sem pressão.</div>
       </div>
     </div>
   </div>
@@ -470,7 +452,7 @@
   <div class="cta-inner">
     <div class="cta-tag">Análise inicial · Atendimento direto</div>
     <h2 class="cta-title">Recebeu negativa ou está<br/><em>esperando há tempo demais?</em></h2>
-    <p class="cta-desc">Apresente seu caso para uma análise inicial por advogados com atuação em Direito da Saúde. Avaliamos os documentos, lemos o contrato e orientamos sobre os caminhos juridicamente possíveis — com comunicação direta e sem promessas.</p>
+    <p class="cta-desc">Apresente seu caso para uma análise inicial por advogados com atuação em Direito da Saúde. Avaliamos os documentos, lemos o contrato e orientamos sobre os caminhos juridicamente possíveis, sem promessas e com comunicação direta.</p>
     <a href="https://wa.me/5511932014994?text=Ol%C3%A1%2C%20quero%20apresentar%20meu%20caso%20sobre%20cirurgia%20reparadora%20p%C3%B3s-bari%C3%A1trica." target="_blank" class="btn-cta">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
       Apresentar meu caso pelo WhatsApp
